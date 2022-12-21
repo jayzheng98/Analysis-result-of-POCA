@@ -1,0 +1,20 @@
+_key,name,category,OS,IP,notes
+1,RBC1,mainframe,Windows10,192.168.4.203,active
+2,RBC2,mainframe,Windows10,192.168.3.105,standby
+3,ISDN1,server,Ubuntu18,192.168.4.206,active
+4,ISDN2,server,Ubuntu18,192.168.3.106,standby
+5,TSRS1,server,Windows10,192.168.4.200,active
+6,TSRS2,server,Windows10,192.168.3.103,standby
+7,TSR Interface,server,WinServer2008,172.110.2.11,
+8,CTC1,mainframe,Windows10,172.110.2.12,active
+9,CTC2,mainframe,Windows10,172.110.2.13,standby
+10,Router,router,,"172.110.2.0/24
+192.168.2.2",
+11,SSDN switch,switch,,"192.168.2.0/24
+192.168.3.0/24
+192.168.4.0/24",layer3 switch
+12,Switch1,switch,,172.110.2.2,"The network of virtual machine is set as ""bridge mode"", so this switch is actually implemented by a server"
+13,Switch2,switch,,192.168.4.62,"The network of virtual machine is set as ""bridge mode"", so this switch is actually implemented by a server"
+14,Switch3,switch,,192.168.4.61,"The network of virtual machine is set as ""bridge mode"", so this switch is actually implemented by a server"
+15,Switch4,switch,,192.168.3.2,"The network of virtual machine is set as ""bridge mode"", so this switch is actually implemented by a server"
+16,Switch5,switch,,192.168.3.3,"The network of virtual machine is set as ""bridge mode"", so this switch is actually implemented by a server"

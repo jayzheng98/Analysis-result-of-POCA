@@ -1,0 +1,7 @@
+_key,description
+SC1,Set a timeout check for information interaction. The receiver would raise an alarm after 3 times of timeout
+SC2,Set periodic pre-reminders for the confirmation of critical commands
+SC3,Set verification on validity of commands and operation results
+SC4,Set up the redundant architecture for main functional units
+SC5,Set up the redundant architecture for main communication links
+SC6,The system is designed with the downward compatibility and can automatically downgrade in the event of a serious failure

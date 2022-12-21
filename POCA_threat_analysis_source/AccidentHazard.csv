@@ -1,0 +1,4 @@
+_from,_to
+hazard/H1,accident/A1
+hazard/H1,accident/A2
+hazard/H2,accident/A2

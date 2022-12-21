@@ -1,0 +1,8 @@
+_key,description
+CA0,CTC generates and sends out ¡°TSR cancel¡± to TSRS
+CA1,"After the successful verification of ¡°TSR command¡±, TSRS issues an ¡°execution reminder¡± to CTC"
+CA2,The dispatcher issues the ¡°TSR execution¡± on CTC to TSRS
+CA3,"TSRS splits and converts the ¡°TSR execution¡±, which is later issued to RBC and TCC respectively"
+CA4,RBC issues the ¡°TSR command¡± to the train via GSM-R
+CA5,The train feeds back its vehicle condition
+CA6,TSRS judges and feeds back the verification result

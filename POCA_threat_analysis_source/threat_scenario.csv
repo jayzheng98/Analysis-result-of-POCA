@@ -1,0 +1,17 @@
+_key,description,node_depth,risk_score
+TS1,The adversary has sniffed the ¡°verification successful¡± thus concludes that the process of execution sub-scenario is about to begin,root_0,
+TS1.1,"The adversary intercepts and causes loss of the ¡°execution reminder¡±. 
+Since TSRS cannot receive the feedback of ¡°TSR execution¡± from CTC after sending the reminder, it will raise an alarm due to the multiple timeouts",leaf_1,
+TS1.2,"Because CTC lacks communication timeout constraints on ¡°execution reminder¡±, an adversary can interfere with the transmission of this command to delay the subsequent processes of execution sub-scenario",leaf_1,
+TS2,"The adversary discovered the reserved ¡°TSR cancel¡± command file in TSR server, tampered it into ¡°TSR execution¡±, then wait for the time to upload it to the CTC mainframe",root_0,
+TS2.1,The adversary has sniffed the ¡°execution reminder¡± thus concludes that the dispatcher is about to issue the ¡°TSR execution¡±,leaf_1,
+TS2.1.1,"The adversary manipulates CTC mainframe to issue the counterfeit ¡°TSR cancel¡± to TSRS. Thus, the cancellation sub-scenario is maliciously started",leaf_2,
+TS3,The adversary has sniffed the ¡°TSR execution¡± thus concludes that TSRS is about to split and convert this command,root_0,
+TS3.1,"The adversary tampers with the configuration file for splitting ¡°TSR execution¡± on TSRS to exchange the split command.
+Since the wrong command cannot be verified, TSRS issues the ¡°verification failed¡± to CTC. However, this feedback is also tampered into ¡°successful¡±, which at last makes the train miss the timing of TSR execution",leaf_1,
+TS4,The adversary has sniffed the ¡°TSR execution (RBC)¡± thus concludes that the train is about to be speed restricted,root_0,
+TS4.1,"The adversary intercepts and causes loss of the ¡°TSR command (RBC)¡±, which further makes the train miss the timing of TSR execution",leaf_1,
+TS4.1.1,"After intercepting, the adversary counterfeits a wrong ¡°TSR command¡± which results in an insufficient speed restriction.
+The counterfeit contents include: speed limit value, TSR starting position and TSR mileage",leaf_2,
+TS4.1.2,"After intercepting, the adversary tampers with the ¡°TSR command¡± which results in an insufficient speed restriction.
+The contents that have been tampered with: speed limit value, TSR starting position and TSR mileage",leaf_2,

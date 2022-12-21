@@ -1,0 +1,9 @@
+_from,_to
+threat_scenario/TS1,threat_scenario/TS1.1
+threat_scenario/TS1,threat_scenario/TS1.2
+threat_scenario/TS2,threat_scenario/TS2.1
+threat_scenario/TS2.1,threat_scenario/TS2.1.1
+threat_scenario/TS3,threat_scenario/TS3.1
+threat_scenario/TS4,threat_scenario/TS4.1
+threat_scenario/TS4.1,threat_scenario/TS4.1.1
+threat_scenario/TS4.1,threat_scenario/TS4.1.2
