@@ -1,0 +1,8 @@
+_key,description,command
+CA0,CTC generates and sends out ¡°TSR cancel¡± to TSRS,TSR_Cancel
+CA1,"After the successful activation of ¡°TSR command¡±, TSRS issues an ¡°execution reminder¡± to CTC",TSR_ExecutionReminder
+CA2,The dispatcher issues the ¡°TSR execution¡± on CTC to TSRS,TSR_Execution
+CA3,"TSRS splits and converts the ¡°TSR execution¡±, which is later issued to RBC and TCC respectively",TSR_Execution
+CA4,RBC executes the ¡°TSR command¡± on the train via GSM-R,TSR_Command
+CA5,The train feeds back its vehicle condition,Train_Feedback
+CA6,TSRS judges and feeds back the verification result,

@@ -1,0 +1,16 @@
+_key,description,node_depth,risk_score
+TS1,"The adversary has sniffed the ¡°verification successful¡±, thus concludes that the process of execution sub-scenario is about to begin",0,28
+TS1.1,"The adversary intercepts and drops of the ¡°execution reminder¡±, thus the subsequent process of execution sub-scenario is interrupted",1,27.5
+TS1.2,"The adversary interferes with the transmission of ""execution reminder"" to delay the subsequent process of execution sub-scenario",1,29.25
+TS1.3,"The adversary interferes with the transmission of ""execution reminder"" to delay the subsequent process of execution sub-scenario",1,27
+TS2,The adversary has discovered and copied the reserved ¡°TSR cancel¡± command file in TSRS,0,28
+TS2.1,"The adversary tampers ""TSR cancel"" into ¡°TSR execution¡±, then wait for the time to upload it to the CTC mainframe",1,31
+TS2.1.1,"The adversary has sniffed the ¡°execution reminder¡±, thus concludes that the dispatcher is about to issue the ¡°TSR execution¡±",2,28
+TS2.1.1.1,"The adversary replaces the ""TSR execution"" to be sent on CTC with the counterfeit ""TSR execution"" to maliciously trigger the TSR cancellation sub-scenario",3,27
+TS3,"The adversary has sniffed the ¡°TSR execution¡±, thus concludes that TSRS is about to split and convert this command",0,28
+TS3.1,"The adversary tampers with the configuration file for splitting ¡°TSR execution¡± on TSRS, and make the split commands failed to be verified",1,29
+TS3.1.1,"The adversary tampers with the failed verification result as ""success"" to deceive TSRS that the commands have been successfully issued, thus the subsequent process of execution sub-scenario is interrupted",2,29.75
+TS4,The adversary has sniffed the ¡°TSR execution (RBC)¡± thus concludes that the train is about to be speed restricted,0,28
+TS4.1,"The adversary intercepts and drops of the ¡°TSR command (RBC)¡±, thus the subsequent process of execution sub-scenario is interrupted",1,27.5
+TS4.1.1,"After intercepting the original command, the adversary counterfeits a wrong ""TSR command"" and issues it, resulting in the train not being speed restricted",2,28
+TS4.1.2,"After intercepting, the adversary tampers with the speed limit value, TSR starting position and TSR mileage contents within ¡°TSR command¡±, resulting in an insufficient speed restriction",2,29.75
